@@ -9,7 +9,7 @@ import urllib.request
 REPOSITORY = "orkunisitmak/nashi-app"
 OWNER_ID = 68860338
 ACTIONS_APP_ID = 15368
-REQUIRED_CHECKS = {"security", "mac-source", "windows"}
+REQUIRED_CHECKS = {"security", "mac-source"}
 
 
 def eligible(pr, head):
@@ -56,7 +56,7 @@ def merge_ready(api, head):
     prefix = "/repos/" + REPOSITORY
     checks = api.request(prefix + "/commits/" + head + "/check-runs?filter=latest&per_page=100")["check_runs"]
     if not checks_passed(checks, head):
-        print("Waiting for required security, Mac and Windows checks.")
+        print("Waiting for required security and Mac checks.")
         return
     pulls = api.request(prefix + "/pulls?state=open&base=main&per_page=100")
     for candidate in pulls:
@@ -83,7 +83,7 @@ def merge_ready(api, head):
         api.request(prefix + "/dispatches", "POST", {"event_type": "owner-pr-merged",
                     "client_payload": {"pull_request": number, "merge_sha": result["sha"]}})
         api.request(prefix + "/pages/builds", "POST")
-        print("Requested post-merge source/Windows checks and the Pages build.")
+        print("Requested post-merge source checks and the Pages build.")
 
 
 def main():

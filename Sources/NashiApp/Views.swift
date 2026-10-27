@@ -3,11 +3,9 @@ import SwiftUI
 import NashiCore
 import UniformTypeIdentifiers
 import ServiceManagement
-import NashiUpdates
 import ApplicationServices
 
 struct SettingsView:View {
-    @ObservedObject var updater:AppUpdater
     @State private var section=SettingsSection.general
     @State private var selectedFormat="jpg"
     @State private var formatSearch=""
@@ -30,9 +28,8 @@ struct SettingsView:View {
     @AppStorage("windowManagementEnabled") private var windowManagementEnabled=true
     @State private var windowAccessibility=AXIsProcessTrusted()
     @Environment(\.accessibilityReduceMotion) private var systemReducedMotion
-    init(updater:AppUpdater,showingUpdates:Bool=false,initialSection:SettingsSection = .general) {
-        self.updater=updater
-        _section=State(initialValue:showingUpdates ? .updates:initialSection)
+    init(initialSection:SettingsSection = .general) {
+        _section=State(initialValue:initialSection)
     }
     private var terminalApplications:[(String,String)] {
         var apps=[("com.apple.Terminal","Terminal")]
@@ -50,7 +47,6 @@ struct SettingsView:View {
                 case .formats:formats
                 case .compatibility:CompatibilitySettingsView { format in selectedFormat=format;section = .formats }
                 case .folders:FolderSettingsView()
-                case .updates:UpdateSettingsView(updater:updater)
                 case .about:AboutSettingsView()
                 }
             }
@@ -58,7 +54,6 @@ struct SettingsView:View {
         }.frame(minWidth:790,minHeight:590).background(NashiPalette.canvas).tint(.nashi)
         .buttonStyle(NashiButtonStyle()).toggleStyle(.switch).groupBoxStyle(NashiGroupBoxStyle()).nashiAnimation(value:section)
         .onAppear(perform:readLaunchStatus)
-        .onReceive(NotificationCenter.default.publisher(for:.showUpdateSettings)) { _ in section = .updates }
         .onChange(of:feedback) { UserDefaults.standard.set($0,forKey:"sound") }
         .onChange(of:appAppearance) { NashiAppearance.apply($0) }
         .onChange(of:appLanguage) { _ in NotificationCenter.default.post(name:.nashiLanguageChanged,object:nil) }
@@ -178,9 +173,9 @@ struct SettingsView:View {
 }
 
 enum SettingsSection:String,CaseIterable,Identifiable {
-    case general="General",formats="Formats",compatibility="Compatibility",folders="Folders",updates="Updates",about="About"
+    case general="General",formats="Formats",compatibility="Compatibility",folders="Folders",about="About"
     var id:String { rawValue }
-    var symbol:String { switch self { case .general:return "gearshape";case .formats:return "doc.on.doc";case .compatibility:return "square.grid.3x3";case .folders:return "folder";case .updates:return "arrow.triangle.2.circlepath";case .about:return "info.circle" } }
+    var symbol:String { switch self { case .general:return "gearshape";case .formats:return "doc.on.doc";case .compatibility:return "square.grid.3x3";case .folders:return "folder";case .about:return "info.circle" } }
 }
 
 private struct FormatSettingsDetail:View {

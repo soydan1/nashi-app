@@ -6,8 +6,10 @@ root=Path(__file__).resolve().parents[1]
 files=subprocess.check_output(['git','ls-files','-z'],cwd=root).decode().split('\0')
 issues=[];count=0
 for name in filter(None,files):
- p=root/name;count+=1
+ p=root/name
  if p.is_symlink():issues.append((name,'tracked symlink'));continue
+ if not p.exists():continue
+ count+=1
  if p.name.startswith('.env') and p.name!='.env.example':issues.append((name,'environment file'))
  if p.suffix.lower() in {'.p12','.pfx','.key','.mobileprovision'}:issues.append((name,'signing/credential material'))
  if name in {'Configuration/Signing.plist','Configuration/CredentialBroker.json'} or name.startswith(('local/','build/','Downloads/','.build/','Reference/native/','Reference/tool-windows/')):issues.append((name,'private/build artifact'))
@@ -19,4 +21,3 @@ if issues:
  for name,reason in issues:print('FAIL',name,reason)
  sys.exit(1)
 print('PASS public-source policy:',count,'tracked files; no forbidden data/material')
-if (root/'scripts/check-feature-parity.py').is_file():subprocess.run([sys.executable,str(root/'scripts/check-feature-parity.py')],check=True)

@@ -2,10 +2,9 @@ import AppKit
 import SwiftUI
 import PDFKit
 import NashiCore
-import NashiUpdates
 
 struct UIAuditOptions {
-    static let scenes=["home.empty","home.selected","library","settings.general","settings.formats","settings.updates","wheel.pdf-multiple","editor.crop-image","editor.annotate-image","editor.frame-image"]
+    static let scenes=["home.empty","home.selected","library","settings.general","settings.formats","settings.about","wheel.pdf-multiple","editor.crop-image","editor.annotate-image","editor.frame-image"]
     var output:URL
     var scenes=Self.scenes
     var appearances=["light","dark"]
@@ -32,7 +31,7 @@ struct UIAuditOptions {
 struct UIAuditError:LocalizedError { let message:String;init(_ message:String){self.message=message};var errorDescription:String?{message} }
 
 /// An explicit, isolated review mode. It never starts the production delegate,
-/// global hotkeys, window manager, updater or clipboard import path.
+/// global hotkeys, window manager or clipboard import path.
 @MainActor final class UIAudit:NSObject,NSApplicationDelegate {
     let options:UIAuditOptions
     private var window:NSWindow?
@@ -121,7 +120,7 @@ struct UIAuditError:LocalizedError { let message:String;init(_ message:String){s
     }
     private func capture(scene:String,appearance:String,language:String,defaults:UserDefaults)async throws {
         window?.close();window=nil
-        let state=AppState(defaults:defaults),recorder=UIAuditLayout(),updater=AppUpdater()
+        let state=AppState(defaults:defaults),recorder=UIAuditLayout()
         let image=fixtures["image"]!,text=fixtures["text"]!,pdf=fixtures["pdf1"]!
         if scene=="home.selected" || scene.hasPrefix("editor."){state.inputs=[image]}
         if scene=="library" {
@@ -131,10 +130,10 @@ struct UIAuditError:LocalizedError { let message:String;init(_ message:String){s
         let isEditor=scene.hasPrefix("editor.")
         let view:AnyView,size:NSSize
         switch scene {
-        case "home.empty","home.selected","library":view=AnyView(HomeView(state:state,updater:updater));size=NSSize(width:700,height:580)
-        case "settings.general","settings.formats","settings.updates":
-            let section:SettingsSection=scene=="settings.formats" ? .formats:scene=="settings.updates" ? .updates:.general
-            view=AnyView(SettingsView(updater:updater,initialSection:section));size=NSSize(width:790,height:590)
+        case "home.empty","home.selected","library":view=AnyView(HomeView(state:state));size=NSSize(width:700,height:580)
+        case "settings.general","settings.formats","settings.about":
+            let section:SettingsSection=scene=="settings.formats" ? .formats:scene=="settings.about" ? .about:.general
+            view=AnyView(SettingsView(initialSection:section));size=NSSize(width:790,height:590)
         case "editor.crop-image","editor.annotate-image","editor.frame-image":
             let tool:ToolKind=scene=="editor.crop-image" ? .cropImage:scene=="editor.annotate-image" ? .annotateImage:.frameImage
             view=AnyView(ToolEditor(state:state,tool:tool));size=NSSize(width:900,height:420)

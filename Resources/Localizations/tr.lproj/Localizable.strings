@@ -39,12 +39,10 @@
 "A FEW TOOLS. MORE POSSIBILITIES." = "BİRKAÇ ARAÇ. DAHA FAZLA OLANAK.";
 "A FRESH FILE IS ON ITS WAY." = "YENİ DOSYAN HAZIRLANIYOR.";
 "A FRESH FILE IS ON ITS WAY…" = "YENİ DOSYAN HAZIRLANIYOR…";
-"A FRESH NASHI IS READY." = "YENİ NASHİ HAZIR.";
 "A FRESH START" = "YENİ BİR BAŞLANGIÇ";
 "A HAPPIER HOME FOR ALL THE LITTLE FILE JOBS. CONVERT, EDIT, AND SHARE — RIGHT ON YOUR MAC." = "KÜÇÜK DOSYA İŞLERİNİN YENİ ADRESİ. MAC'İNDE DÖNÜŞTÜR, DÜZENLE VE PAYLAŞ.";
 "A LINK. A FILE. YOURS TO WORK WITH." = "BİR BAĞLANTI. BİR DOSYA. KONTROL SENDE.";
 "A LITTLE CODE, DECODED." = "KÜÇÜK BİR KOD, ÇÖZÜLDÜ.";
-"A LITTLE FRESHER. READY WHEN YOU ARE." = "YENİ SÜRÜM HAZIR. SEN HAZIR OLDUĞUNDA.";
 "A LITTLE LESS FILE FUSS. A LITTLE MORE FLOW." = "DOSYA İŞİ AZALSIN, AKIŞIN HIZLANSIN.";
 "A LITTLE LESS FILE FUSS. A LITTLE MORE FLOW.\nCONVERT, EDIT, AND ORGANIZE — RIGHT ON YOUR MAC." = "DOSYA İŞİ AZALSIN, AKIŞIN HIZLANSIN.\nMAC'İNDE DÖNÜŞTÜR, DÜZENLE VE ORGANİZE ET.";
 "A LITTLE PEAR. A LOT OF POSSIBILITY." = "KÜÇÜK BİR ARMUT. BİR SÜRÜ OLASILIK.";
@@ -52,13 +50,11 @@
 "A PLACE FOR FRESH FILES." = "YENİ DOSYALAR İÇİN BİR YER.";
 "A few small preferences. A smoother everyday." = "Birkaç küçük tercih. Daha akıcı bir gün.";
 "A few tools. More possibilities." = "Birkaç araç. Daha fazla olanak.";
-"A fresh Nashi is ready." = "Yeni Nashi hazır.";
 "A fresh file is on its way." = "Yeni dosyan hazırlanıyor.";
 "A fresh file is on its way…" = "Yeni dosyan hazırlanıyor…";
 "A happier home for all the little file jobs. Convert, edit, and share — right on your Mac." = "Küçük dosya işlerinin yeni adresi. Mac'inde dönüştür, düzenle ve paylaş.";
 "A link. A file. Yours to work with." = "Bir bağlantı. Bir dosya. Kontrol sende.";
 "A little code, decoded." = "Küçük bir kod, çözüldü.";
-"A little fresher. Ready when you are." = "Yeni sürüm hazır. Sen hazır olduğunda.";
 "A little less file fuss. A little more flow." = "Dosya işi azalsın, akışın hızlansın.";
 "A little less file fuss. A little more flow.\nConvert, edit, and organize — right on your Mac." = "Dosya işi azalsın, akışın hızlansın.\nMac'inde dönüştür, düzenle ve organize et.";
 "A little pear. A lot of possibility." = "Küçük bir armut. Bir sürü olasılık.";
@@ -113,7 +109,6 @@
 "AUDIO TO VIDEO" = "SESTEN VİDEO OLUŞTUR";
 "AUDIO VISUALIZER" = "SESİ GÖRSELLEŞTİR";
 "AUDIO · MP3" = "SES · MP3";
-"AUTHORIZE SAVED TOKEN…" = "KAYITLI TOKENA İZİN VER…";
 "AVAILABLE FILES SELECTED. SOME FILES HAVE MOVED OR WERE DELETED." = "MEVCUT DOSYALAR SEÇİLDİ. BAZI DOSYALAR TAŞINMIŞ VEYA SİLİNMİŞ.";
 "About" = "Hakkında";
 "Accessibility" = "Erişilebilirlik";
@@ -168,7 +163,6 @@
 "Audio sample depth" = "Ses örnek derinliği";
 "Audio to Video" = "Sesten Video Oluştur";
 "Audio · MP3" = "Ses · MP3";
-"Authorize Saved Token…" = "Kayıtlı Tokena İzin Ver…";
 "Available files selected. Some files have moved or were deleted." = "Mevcut dosyalar seçildi. Bazı dosyalar taşınmış veya silinmiş.";
 "BACK" = "GERİ";
 "BACKGROUND" = "ARKA PLAN";
@@ -221,13 +215,7 @@
 "CHANGE VIDEO SPEED" = "VİDEO HIZINI DEĞİŞTİR";
 "CHANGE…" = "DEĞİŞTİR…";
 "CHANNELS" = "KANALLAR";
-"CHECK AUTOMATICALLY WHILE NASHI IS RUNNING" = "NASHİ ÇALIŞIRKEN OTOMATİK DENETLE";
-"CHECK FOR UPDATES" = "GÜNCELLEMELERİ DENETLE";
-"CHECK FOR UPDATES AUTOMATICALLY" = "GÜNCELLEMELERİ OTOMATİK DENETLE";
-"CHECK FOR UPDATES…" = "GÜNCELLEMELERİ DENETLE…";
 "CHECK LINK" = "BAĞLANTIYI KONTROL ET";
-"CHECKING FOR UPDATES…" = "GÜNCELLEMELER DENETLENİYOR…";
-"CHECKING THE CONNECTION…" = "BAĞLANTI KONTROL EDİLİYOR…";
 "CHOOSE AN INPUT FORMAT TO SEE ITS AVAILABLE OUTPUTS." = "KULLANILABİLİR ÇIKTILARINI GÖRMEK İÇİN BİR GİRDİ BİÇİMİ SEÇ.";
 "CHOOSE ANNOTATION IMAGE…" = "İŞARET GÖRSELİ SEÇ…";
 "CHOOSE BACKGROUND IMAGE…" = "ARKA PLAN GÖRSELİ SEÇ…";
@@ -303,13 +291,7 @@
 "Change Video Speed" = "Video Hızını Değiştir";
 "Change…" = "Değiştir…";
 "Channels" = "Kanallar";
-"Check automatically while Nashi is running" = "Nashi çalışırken otomatik denetle";
-"Check for Updates…" = "Güncellemeleri Denetle…";
-"Check for updates" = "Güncellemeleri denetle";
-"Check for updates automatically" = "Güncellemeleri otomatik denetle";
 "Check link" = "Bağlantıyı kontrol et";
-"Checking for updates…" = "Güncellemeler denetleniyor…";
-"Checking the connection…" = "Bağlantı kontrol ediliyor…";
 "Choose Background Image…" = "Arka Plan Görseli Seç…";
 "Choose Files…" = "Dosya Seç…";
 "Choose Find media to inspect this link." = "Bu bağlantıyı incelemek için Medyayı bul'u seç.";
@@ -393,7 +375,6 @@
 "DETECT TEXT" = "METNİ ALGILA";
 "DEVICE CONTROL AND DATA ACCESS" = "AYGIT DENETİMİ VE VERİ ERİŞİMİ";
 "DEVICES" = "AYGITLAR";
-"DISCONNECT & FORGET TOKEN" = "BAĞLANTIYI KES VE TOKENI SİL";
 "DISMISS" = "KAPAT";
 "DOCUMENTS" = "BELGELER";
 "DONE" = "BİTTİ";
@@ -443,7 +424,6 @@
 "Detect text" = "Metni algıla";
 "Device Control and Data Access" = "Aygıt Denetimi ve Veri Erişimi";
 "Devices" = "Aygıtlar";
-"Disconnect & Forget Token" = "Bağlantıyı Kes ve Tokenı Sil";
 "Dismiss" = "Kapat";
 "Documents" = "Belgeler";
 "Done" = "Bitti";
@@ -547,7 +527,6 @@
 "FIND IN LIBRARY…" = "KİTAPLIKTA ARA…";
 "FIND MEDIA" = "MEDYAYI BUL";
 "FINDING THE MEDIA…" = "MEDYA BULUNUYOR…";
-"FINE-GRAINED ACCESS TOKEN" = "AYRINTILI ERİŞİM TOKENI";
 "FINE-TUNE" = "İNCE AYAR";
 "FINE-TUNE IT. SAVE A FRESH COPY." = "İNCE AYAR YAP. YENİ BİR KOPYA KAYDET.";
 "FINISH OR CANCEL THE CURRENT OPERATION BEFORE QUITTING." = "ÇIKMADAN ÖNCE MEVCUT İŞLEMİ BİTİR VEYA İPTAL ET.";
@@ -607,7 +586,6 @@
 "Find in Library…" = "Kitaplıkta Ara…";
 "Find media" = "Medyayı bul";
 "Finding the media…" = "Medya bulunuyor…";
-"Fine-grained access token" = "Ayrıntılı erişim tokenı";
 "Fine-tune" = "İnce ayar";
 "Fine-tune it. Save a fresh copy." = "İnce ayar yap. Yeni bir kopya kaydet.";
 "Finish or cancel the current operation before quitting." = "Çıkmadan önce mevcut işlemi bitir veya iptal et.";
@@ -655,7 +633,6 @@
 "GIF frames per second" = "GIF saniyedeki kare sayısı";
 "GIF maximum width" = "En fazla GIF genişliği";
 "GIF width" = "GIF genişliği";
-"GITHUB REPOSITORY" = "GİTHUB DEPOSU";
 "GIVE IT A LITTLE BREATHING ROOM." = "BİRAZ NEFES ALACAK ALAN AÇ.";
 "GLASS" = "CAM";
 "GRADIENT" = "GEÇİŞ";
@@ -665,7 +642,6 @@
 "Gamma" = "Gama";
 "General" = "Genel";
 "Get started" = "Başla";
-"GitHub repository" = "GitHub deposu";
 "Give it a little breathing room." = "Biraz nefes alacak alan aç.";
 "Glass" = "Cam";
 "Gradient" = "Geçiş";
@@ -861,7 +837,6 @@
 "Mute" = "Sessize al";
 "Mute Video" = "Videoyu Sessize Al";
 "Mute Video · Nashi" = "Videoyu Sessize Al · Nashi";
-"NASHI CHECKS ONCE AN HOUR WHILE IT’S RUNNING. YOU CHOOSE WHEN TO DOWNLOAD AND INSTALL." = "NASHİ ÇALIŞIRKEN SAATTE BİR DENETLER. İNDİRME VE KURULUM ZAMANINI SEN SEÇERSİN.";
 "NASHI SAVES RESULTS BESIDE THE ORIGINALS. ALLOW A FOLDER ONCE TO INCLUDE EVERY FOLDER INSIDE IT." = "NASHİ SONUÇLARI ORİJİNALLERİN YANINA KAYDEDER. BİR KLASÖRE VERİLEN İZİN, İÇİNDEKİ KLASÖRLERİ DE KAPSAR.";
 "NASHI SETTINGS" = "NASHİ AYARLARI";
 "NEXT" = "İLERİ";
@@ -874,7 +849,6 @@
 "NO FOLDERS ALLOWED YET." = "HENÜZ İZİN VERİLEN KLASÖR YOK.";
 "NO MATCHES. TRY A FILE NAME OR TOOL." = "EŞLEŞME BULUNAMADI. DOSYA ADI VEYA ARAÇ ADIYLA ARA.";
 "NO QR CODES THIS TIME." = "QR KODU BULUNAMADI.";
-"NO UPDATE CHECKS YET" = "HENÜZ GÜNCELLEME DENETLENMEDİ";
 "NOISE REDUCTION" = "GÜRÜLTÜ AZALTMA";
 "NOISEREDUCTION" = "GÜRÜLTÜ AZALTMA";
 "NONE" = "YOK";
@@ -884,7 +858,6 @@
 "NUMBER" = "NUMARA";
 "NUMBER OF CLIPS" = "KLİP SAYISI";
 "Nashi Settings" = "Nashi Ayarları";
-"Nashi checks once an hour while it’s running. You choose when to download and install." = "Nashi çalışırken saatte bir denetler. İndirme ve kurulum zamanını sen seçersin.";
 "Nashi saves results beside the originals. Allow a folder once to include every folder inside it." = "Nashi sonuçları orijinallerin yanına kaydeder. Bir klasöre verilen izin, içindeki klasörleri de kapsar.";
 "Next" = "İleri";
 "Next frame" = "Sonraki kare";
@@ -898,7 +871,6 @@
 "No QR codes this time." = "QR kodu bulunamadı.";
 "No folders allowed yet." = "Henüz izin verilen klasör yok.";
 "No matches. Try a file name or tool." = "Eşleşme bulunamadı. Dosya adı veya araç adıyla ara.";
-"No update checks yet" = "Henüz güncelleme denetlenmedi";
 "Noise reduction" = "Gürültü azaltma";
 "NoiseReduction" = "Gürültü azaltma";
 "None" = "Yok";
@@ -930,7 +902,6 @@
 "OUTPUT" = "ÇIKTI";
 "OUTPUT FORMAT" = "ÇIKTI BİÇİMİ";
 "OUTPUT-ONLY FORMAT." = "YALNIZCA ÇIKTI BİÇİMİ.";
-"OWNER/REPOSITORY OR GITHUB URL" = "KULLANICI/DEPO VEYA GİTHUB ADRESİ";
 "Office tools" = "Ofis araçları";
 "On your Mac" = "Mac'inde";
 "On your PC" = "Bilgisayarında";
@@ -1007,7 +978,6 @@
 "PROCESSED PREVIEW · EXPORT USES THE ORIGINAL FILE." = "İŞLENMİŞ ÖNİZLEME · DIŞA AKTARMADA ORİJİNAL DOSYA KULLANILIR.";
 "PROCESSED PREVIEW. CHOOSE ORIGINAL TO EDIT AREAS." = "İŞLENMİŞ ÖNİZLEME. ALANLARI DÜZENLEMEK İÇİN ORİJİNAL'İ SEÇ.";
 "PROCESSING…" = "İŞLENİYOR…";
-"PUBLIC UPDATES WORK WITHOUT A TOKEN." = "HERKESE AÇIK GÜNCELLEMELER İÇİN TOKEN GEREKMEZ.";
 "Padding" = "İç boşluk";
 "Page %@" = "Sayfa %@";
 "Page %lld" = "Sayfa %lld";
@@ -1056,7 +1026,6 @@
 "Processed preview · export uses the original file." = "İşlenmiş önizleme · dışa aktarmada orijinal dosya kullanılır.";
 "Processed preview. Choose Original to edit areas." = "İşlenmiş önizleme. Alanları düzenlemek için Orijinal'i seç.";
 "Processing…" = "İşleniyor…";
-"Public updates work without a token." = "Herkese açık güncellemeler için token gerekmez.";
 "QUALITY" = "KALİTE";
 "QUALITY (%)" = "KALİTE (%)";
 "QUICK LOOK" = "HIZLI BAKIŞ";
@@ -1187,7 +1156,6 @@
 "SAVE AS" = "FARKLI KAYDET";
 "SAVE AUDIO COPY" = "SES KOPYASINI KAYDET";
 "SAVE BLEEPED COPY" = "BİP EKLENMİŞ KOPYAYI KAYDET";
-"SAVE CONNECTION" = "BAĞLANTIYI KAYDET";
 "SAVE COPY" = "KOPYAYI KAYDET";
 "SAVE CROPPED COPY" = "KIRPILMIŞ KOPYAYI KAYDET";
 "SAVE DEFAULTS" = "VARSAYILANLARI KAYDET";
@@ -1218,7 +1186,6 @@
 "SELECT / MOVE" = "SEÇ / TAŞI";
 "SELECT A CLIP AND PRESS DELETE TO REMOVE IT FROM THE RESULT." = "BİR KLİBİ SEÇ VE SONUÇTAN ÇIKARMAK İÇİN DELETE'E BAS.";
 "SELECT ALL" = "TÜMÜNÜ SEÇ";
-"SELECT ONLY THIS REPOSITORY AND GIVE CONTENTS READ ACCESS. THE TOKEN STAYS IN THIS MAC’S KEYCHAIN." = "YALNIZCA BU DEPOYU SEÇ VE CONTENTS OKUMA İZNİ VER. TOKEN BU MAC'İN ANAHTAR ZİNCİRİ'NDE KALIR.";
 "SELECT PHOTOS" = "FOTOĞRAFLARI SEÇ";
 "SELECTED FOLDER" = "SEÇİLİ KLASÖRE";
 "SERIF" = "SERİF";
@@ -1289,7 +1256,6 @@
 "Save %@ frames" = "%@ kare kaydet";
 "Save %lld frames" = "%lld kare kaydet";
 "Save 1 frame" = "1 kare kaydet";
-"Save Connection" = "Bağlantıyı Kaydet";
 "Save a copy" = "Kopya kaydet";
 "Save annotated copy" = "İşaretlenmiş kopyayı kaydet";
 "Save as" = "Farklı kaydet";
@@ -1327,7 +1293,6 @@
 "Select / Move" = "Seç / Taşı";
 "Select All" = "Tümünü Seç";
 "Select a clip and press Delete to remove it from the result." = "Bir klibi seç ve sonuçtan çıkarmak için Delete'e bas.";
-"Select only this repository and give Contents read access. The token stays in this Mac’s Keychain." = "Yalnızca bu depoyu seç ve Contents okuma izni ver. Token bu Mac'in Anahtar Zinciri'nde kalır.";
 "Select photos" = "Fotoğrafları seç";
 "Selected duration: %@" = "Seçili süre: %@";
 "Selected duration: %lld" = "Seçili süre: %lld";
@@ -1414,8 +1379,6 @@
 "THIS FORMAT CAN BE IMPORTED. CHOOSE AN OUTPUT FORMAT IN THE SIDEBAR TO CONFIGURE ITS DEFAULTS." = "BU BİÇİM İÇE AKTARILABİLİR. VARSAYILANLARI AYARLAMAK İÇİN KENAR ÇUBUĞUNDAN BİR ÇIKTI BİÇİMİ SEÇ.";
 "THIS FORMAT USES ITS ORIGINAL DOCUMENT STRUCTURE. NO EXPORT DEFAULTS ARE NEEDED." = "BU BİÇİM ORİJİNAL BELGE YAPISINI KULLANIR. DIŞA AKTARMA TERCİHİ GEREKMEZ.";
 "THIS OUTPUT FORMAT HAS NO ADJUSTABLE CONVERSION DEFAULTS." = "BU ÇIKTI BİÇİMİNİN AYARLANABİLİR DÖNÜŞTÜRME TERCİHİ YOK.";
-"THIS REPOSITORY IS PRIVATE" = "BU DEPO GİZLİ";
-"THIS WINDOWS CODEC CANNOT PLAY DIRECTLY. SET UP MEDIA TOOLS TO CREATE A LOCAL PREVIEW." = "BU WİNDOWS CODEC'İ DOĞRUDAN OYNATILAMIYOR. YEREL ÖNİZLEME OLUŞTURMAK İÇİN MEDYA ARAÇLARINI KUR.";
 "THUMBNAIL" = "KÜÇÜK RESİM";
 "TIMES (SECONDS)" = "ZAMANLAR (SANİYE)";
 "TINT" = "TON";
@@ -1451,13 +1414,11 @@
 "The downloaded tools are incomplete. Please try setup again." = "İndirilen araçlar eksik. Kurulumu tekrar dene.";
 "The same conversion and tool catalog as macOS." = "macOS ile aynı dönüştürme ve araç seçenekleri.";
 "These files have moved or were deleted." = "Bu dosyalar taşınmış veya silinmiş.";
-"This Windows codec cannot play directly. Set up media tools to create a local preview." = "Bu Windows codec'i doğrudan oynatılamıyor. Yerel önizleme oluşturmak için medya araçlarını kur.";
 "This crop applies to every selected image and must fit inside each one." = "Bu kırpma, seçilen tüm görsellere uygulanır ve her görselin sınırlarına sığmalıdır.";
 "This file has moved or was deleted." = "Bu dosya taşınmış veya silinmiş.";
 "This format can be imported. Choose an output format in the sidebar to configure its defaults." = "Bu biçim içe aktarılabilir. Varsayılanları ayarlamak için kenar çubuğundan bir çıktı biçimi seç.";
 "This format uses its original document structure. No export defaults are needed." = "Bu biçim orijinal belge yapısını kullanır. Dışa aktarma tercihi gerekmez.";
 "This output format has no adjustable conversion defaults." = "Bu çıktı biçiminin ayarlanabilir dönüştürme tercihi yok.";
-"This repository is private" = "Bu depo gizli";
 "Thumbnail" = "Küçük resim";
 "Times (seconds)" = "Zamanlar (saniye)";
 "Tint" = "Ton";
@@ -1484,17 +1445,8 @@
 "UNIT" = "BİRİM";
 "UP TO 1080P" = "EN FAZLA 1080P";
 "UP TO 720P" = "EN FAZLA 720P";
-"UPDATE CANCELLED." = "GÜNCELLEME İPTAL EDİLDİ.";
-"UPDATE CONNECTION…" = "GÜNCELLEME BAĞLANTISI…";
-"UPDATES" = "GÜNCELLEMELER";
-"UPDATES ARE BEING SET UP" = "GÜNCELLEMELER AYARLANIYOR";
-"UPDATES ARE DOWNLOADED FROM THE PUBLIC NASHI REPOSITORY AND VERIFIED BEFORE INSTALLATION. NO GITHUB ACCOUNT OR TOKEN IS REQUIRED." = "GÜNCELLEMELER HERKESE AÇIK NASHİ DEPOSUNDAN İNDİRİLİR VE KURULMADAN ÖNCE DOĞRULANIR. GİTHUB HESABI VEYA TOKEN GEREKMEZ.";
-"UPDATES ARE SIGNED AND VERIFIED BEFORE INSTALLATION. CHANGING REPOSITORIES KEEPS THE SAME TRUSTED SIGNING KEY. YOUR SETTINGS AND FILES STAY WITH YOU." = "GÜNCELLEMELER İMZALANIR VE KURULMADAN ÖNCE DOĞRULANIR. DEPO DEĞİŞSE DE GÜVENİLİR İMZA ANAHTARI AYNI KALIR. AYARLARIN VE DOSYALARIN KORUNUR.";
-"UPDATES ARE VERIFIED BEFORE INSTALLATION. YOUR SETTINGS AND RECENT HISTORY STAY WITH YOU." = "GÜNCELLEMELER KURULMADAN ÖNCE DOĞRULANIR. AYARLARIN VE SON İŞLEM GEÇMİŞİN KORUNUR.";
-"UPDATE…" = "GÜNCELLE…";
 "UPSTREAM VERSIONS, LICENSES AND SOURCE LINKS" = "ARAÇ SÜRÜMLERİ, LİSANSLAR VE KAYNAK BAĞLANTILARI";
 "USE IN NASHI" = "NASHİ'DE KULLAN";
-"USE ONCE IF MACOS NEEDS PERMISSION FOR YOUR SAVED UPDATE CONNECTION." = "MACOS KAYITLI GÜNCELLEME BAĞLANTISI İÇİN İZİN İSTERSE BİR KEZ KULLAN.";
 "USE OPEN TO PREVIEW THIS DOCUMENT IN ITS DEFAULT APP." = "BU BELGEYİ VARSAYILAN UYGULAMASINDA ÖNİZLEMEK İÇİN AÇ'I KULLAN.";
 "Undo" = "Geri Al";
 "Undo Area" = "Alanı Geri Al";
@@ -1503,24 +1455,11 @@
 "Unit" = "Birim";
 "Up to 1080p" = "En fazla 1080p";
 "Up to 720p" = "En fazla 720p";
-"Update Connection…" = "Güncelleme Bağlantısı…";
-"Update cancelled." = "Güncelleme iptal edildi.";
-"Update to %@" = "%@ sürümüne güncelle";
-"Update to %@…" = "%@ Sürümüne Güncelle…";
-"Update to %lld" = "%lld sürümüne güncelle";
-"Update to %lld…" = "%lld Sürümüne Güncelle…";
-"Updates" = "Güncellemeler";
-"Updates are being set up" = "Güncellemeler ayarlanıyor";
-"Updates are downloaded from the public Nashi repository and verified before installation. No GitHub account or token is required." = "Güncellemeler herkese açık Nashi deposundan indirilir ve kurulmadan önce doğrulanır. GitHub hesabı veya token gerekmez.";
-"Updates are signed and verified before installation. Changing repositories keeps the same trusted signing key. Your settings and files stay with you." = "Güncellemeler imzalanır ve kurulmadan önce doğrulanır. Depo değişse de güvenilir imza anahtarı aynı kalır. Ayarların ve dosyaların korunur.";
-"Updates are verified before installation. Your settings and recent history stay with you." = "Güncellemeler kurulmadan önce doğrulanır. Ayarların ve son işlem geçmişin korunur.";
-"Update…" = "Güncelle…";
 "Upgraded from Tangerine? macOS may still show the previous name. Choose this Nashi app when adding it to %@." = "Tangerine'den mi geçtin? macOS eski adı gösterebilir. %@ iznine eklerken bu Nashi uygulamasını seç.";
 "Upgraded from Tangerine? macOS may still show the previous name. Choose this Nashi app when adding it to %lld." = "Tangerine'den mi geçtin? macOS eski adı gösterebilir. %lld iznine eklerken bu Nashi uygulamasını seç.";
 "Upstream versions, licenses and source links" = "Araç sürümleri, lisanslar ve kaynak bağlantıları";
 "Use Open to preview this document in its default app." = "Bu belgeyi varsayılan uygulamasında önizlemek için Aç'ı kullan.";
 "Use in Nashi" = "Nashi'de kullan";
-"Use once if macOS needs permission for your saved update connection." = "macOS kayıtlı güncelleme bağlantısı için izin isterse bir kez kullan.";
 "VALUE" = "DEĞER";
 "VIBRANCE" = "CANLILIK";
 "VIDEO" = "VİDEO";
@@ -1567,9 +1506,6 @@
 "Window management · drag a title bar, then Shift or Alt" = "Pencere düzeni · başlık çubuğunu sürüklerken Shift veya Alt'a bas";
 "Working…" = "İşleniyor…";
 "YOU CAN ALSO CHOOSE FILES FROM THE MAIN WINDOW." = "ANA PENCEREDEN DE DOSYA SEÇEBİLİRSİN.";
-"YOU CHOOSE WHEN TO DOWNLOAD AND INSTALL." = "NE ZAMAN İNDİRİP KURACAĞINA SEN KARAR VER.";
-"YOU HAVE THE LATEST PUBLISHED WINDOWS VERSION." = "YAYINLANAN EN GÜNCEL WİNDOWS SÜRÜMÜNÜ KULLANIYORSUN.";
-"YOUR CURRENT TASK WILL FINISH BEFORE AN UPDATE RESTARTS THE APP." = "GÜNCELLEME UYGULAMAYI YENİDEN BAŞLATMADAN ÖNCE MEVCUT İŞLEMİN TAMAMLANIR.";
 "YOUR FILES STAY LOCAL" = "DOSYALARIN CİHAZINDA KALIR";
 "YOUR FILES WILL BE SAVED AS NEW COPIES.\nCHOOSE OPTIONS, THEN SAVE." = "DOSYALARIN YENİ KOPYALAR OLARAK KAYDEDİLİR.\nSEÇENEKLERİ AYARLA VE KAYDET.";
 "YOUR FILES, A LITTLE SWEETER." = "DOSYALARINA KÜÇÜK BİR DOKUNUŞ.";
@@ -1583,10 +1519,7 @@
 "YOUR TOOLS ARE READY. LET’S PUT THAT NEXT FILE TO GOOD USE." = "ARAÇLARIN HAZIR. SIRADAKİ DOSYAYI BİRLİKTE HAZIRLAYALIM.";
 "YOU’RE ALL SET.\nMAKE SOMETHING GOOD." = "HER ŞEY HAZIR.\nGÜZEL BİR ŞEY YAP.";
 "You can also choose files from the main window." = "Ana pencereden de dosya seçebilirsin.";
-"You choose when to download and install." = "Ne zaman indirip kuracağına sen karar ver.";
-"You have the latest published Windows version." = "Yayınlanan en güncel Windows sürümünü kullanıyorsun.";
 "Your Library" = "Kitaplığın";
-"Your current task will finish before an update restarts the app." = "Güncelleme uygulamayı yeniden başlatmadan önce mevcut işlemin tamamlanır.";
 "Your files stay local" = "Dosyaların cihazında kalır";
 "Your files will be saved as new copies.\nChoose options, then save." = "Dosyaların yeni kopyalar olarak kaydedilir.\nSeçenekleri ayarla ve kaydet.";
 "Your files, a little sweeter." = "Dosyalarına küçük bir dokunuş.";
@@ -1599,7 +1532,6 @@
 "Your tools are ready. Let’s put that next file to good use." = "Araçların hazır. Sıradaki dosyayı birlikte hazırlayalım.";
 "You’re all set.\nMake something good." = "Her şey hazır.\nGüzel bir şey yap.";
 "macOS Reduce Motion is on. Nashi keeps motion off." = "macOS Hareketi Azalt açık. Nashi animasyonları kapalı tutar.";
-"owner/repository or GitHub URL" = "kullanıcı/depo veya GitHub adresi";
 "←/→ FILES · MEDIA: SPACE PLAY/PAUSE, ←/→ 1S, ALT+←/→ FILES · ESC CLOSES" = "←/→ DOSYALAR · MEDYA: SPACE OYNAT/DURAKLAT, ←/→ 1 SN, ALT+←/→ DOSYALAR · ESC KAPATIR";
 "←/→ FILES · MEDIA: SPACE PLAY/PAUSE, ←/→ 1S, ⌥←/→ FILES · ESC CLOSES" = "←/→ DOSYALAR · MEDYA: SPACE OYNAT/DURAKLAT, ←/→ 1 SN, ⌥←/→ DOSYALAR · ESC KAPATIR";
 "←/→ files · Media: Space play/pause, ←/→ 1s, Alt+←/→ files · Esc closes" = "←/→ dosyalar · Medya: Space oynat/duraklat, ←/→ 1 sn, Alt+←/→ dosyalar · Esc kapatır";

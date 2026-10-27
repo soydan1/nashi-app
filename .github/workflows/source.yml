@@ -48,5 +48,5 @@ jobs:
           path: build/native-ui
           retention-days: 7
           if-no-files-found: warn
-      - name: Update trust, web photo and window placement and setup regressions
-        run: swift test --filter 'NashiUpdatesTests|WebMediaDragPayloadTests|InstagramPhotosTests|YouTubeThumbnailTests|WindowPlacementTests|AppLocalizationTests|ToolSetupTests'
+      - name: Web photo, window placement, localization and setup regressions
+        run: swift test --filter 'WebMediaDragPayloadTests|InstagramPhotosTests|YouTubeThumbnailTests|WindowPlacementTests|AppLocalizationTests|ToolSetupTests'

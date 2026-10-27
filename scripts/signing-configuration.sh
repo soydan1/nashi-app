@@ -42,30 +42,6 @@ nashi_load_signing_configuration() {
   export NASHI_SIGNING_IDENTITY="$nashi_signing_identity"
 }
 
-nashi_require_release_signing() {
-  local scope=${1:-release}
-  if [[ "$nashi_signing_mode" == apple-development || "$nashi_signing_mode" == developer-id ]]; then return 0; fi
-  # The release integration fixture uses an isolated, validated loopback feed.
-  # Publishing never accepts this exception, even when its flag is inherited.
-  if [[ "$scope" == local-test && "${NASHI_ALLOW_AD_HOC_TEST_RELEASE:-}" == 1 ]]; then return 0; fi
-  if [[ "$nashi_signing_mode" == local ]]; then
-    python3 scripts/build-credential-broker.py || {
-      print -u2 "Local update releases require the verified frozen credential broker matching the main app certificate. Restore it or complete the explicit reviewed initialization."
-      return 1
-    }
-    return 0
-  fi
-  print -u2 "Release signing is not configured. Pin an Apple Development or Developer ID certificate in Configuration/Signing.plist; ad-hoc releases are refused."
-  return 1
-}
-
-nashi_verify_release_app() {
-  nashi_verify_signing_identity "$1" || return 1
-  if [[ "$nashi_signing_mode" == local ]]; then
-    python3 scripts/build-credential-broker.py --verify-app "$1" || return 1
-  fi
-}
-
 nashi_verify_signing_identity() {
   local code=$1
   if [[ "$nashi_signing_mode" == ad-hoc ]]; then return 0; fi

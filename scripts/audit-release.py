@@ -4,10 +4,11 @@ import os, re, sys, plistlib
 from pathlib import Path
 root=Path(sys.argv[1]).resolve()
 info=plistlib.loads((root/'Contents/Info.plist').read_bytes())
-assert info.get('NashiPublicUpdateRepository')=='orkunisitmak/nashi-app'
-assert info.get('SUFeedURL')=='https://github.com/orkunisitmak/nashi-app/releases/latest/download/appcast.xml'
+assert not any(key.startswith('SU') for key in info), 'App updater settings must not be included'
+assert not any(key in info for key in ('NashiPublicUpdateRepository', 'NashiSuggestedGitHubRepository', 'NashiLocalUpdateFeed'))
 assert info.get('NashiExternalTools') is True
-assert not (root/'Contents/XPCServices').exists(), 'Public archive must not include a private credential broker'
+assert not (root/'Contents/Frameworks').exists(), 'App updater frameworks must not be included'
+assert not (root/'Contents/XPCServices').exists(), 'Credential services must not be included'
 assert not (root/'Contents/Resources/Tools/ffmpeg').exists(), 'Upstream media tools use direct first-use acquisition'
 assert not (root/'Contents/Resources/Tools/LibreOffice.app').exists()
 username=os.environ.get('USER','').encode()

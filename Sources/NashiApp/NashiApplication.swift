@@ -4,8 +4,6 @@ import NashiCore
 import ServiceManagement
 import Carbon
 import Combine
-import NashiUpdates
-import NashiCore
 import ApplicationServices
 
 @main
@@ -99,13 +97,11 @@ enum NashiApplication {
 
 @MainActor final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     let state=AppState()
-    let updater=AppUpdater()
-    private var updateObservations=Set<AnyCancellable>()
+    private var observations=Set<AnyCancellable>()
     var statusItem:NSStatusItem!
     var home:NSWindow?
     private var homeKeyboardMonitor:Any?
     var settings:NSWindow?
-    var updateConnection:NSWindow?
     private let progressToast=ProgressToastController()
     var toolSetupWorking=false
     var toolSetupWindow:NSWindow?
@@ -131,8 +127,6 @@ enum NashiApplication {
         appMenu.addItem(withTitle:"Download Link…",action:#selector(showDownloadLink),keyEquivalent:"")
         appMenu.addItem(withTitle:"Settings…",action:#selector(showSettings),keyEquivalent:",")
         appMenu.addItem(withTitle:"Welcome…",action:#selector(showWelcome),keyEquivalent:"")
-        appMenu.addItem(withTitle:"Check for Updates…",action:#selector(checkForUpdates),keyEquivalent:"u")
-        appMenu.addItem(withTitle:"Update Connection…",action:#selector(showUpdateConnection),keyEquivalent:"")
         appMenu.addItem(.separator());appMenu.addItem(withTitle:"Quit Nashi",action:#selector(quit),keyEquivalent:"q")
         for item in appMenu.items { item.target=self;if item.action == #selector(showDownloadLink) { item.keyEquivalent="d";item.keyEquivalentModifierMask=[.control,.shift] } };let appItem=NSMenuItem();appItem.submenu=appMenu;mainMenu.addItem(appItem)
         let edit=NSMenu(title:"Edit")
@@ -148,8 +142,6 @@ enum NashiApplication {
         menu.addItem(withTitle:"Settings…",action:#selector(showSettings),keyEquivalent:",")
         menu.addItem(withTitle:"Welcome…",action:#selector(showWelcome),keyEquivalent:"")
         menu.addItem(withTitle:"Recent Conversions",action:#selector(showHome),keyEquivalent:"")
-        menu.addItem(withTitle:"Check for Updates…",action:#selector(checkForUpdates),keyEquivalent:"")
-        menu.addItem(withTitle:"Update Connection…",action:#selector(showUpdateConnection),keyEquivalent:"")
         menu.addItem(NSMenuItem.separator())
         menu.addItem(withTitle:"Quit Nashi",action:#selector(quit),keyEquivalent:"q")
         for item in menu.items { item.target=self }
@@ -158,22 +150,13 @@ enum NashiApplication {
         statusItem.menu=menu;menu.delegate=self
         appMenu.delegate=self
         L10n.localize(mainMenu);L10n.localize(menu)
-        NotificationCenter.default.publisher(for:.nashiLanguageChanged).sink { _ in L10n.localize(NSApp.mainMenu);L10n.localize(menu);L10n.updateWindowTitles() }.store(in:&updateObservations)
-        state.$working.sink { [weak self] working in guard let self else{return};self.updater.setBusy(working || self.toolSetupWorking) }.store(in:&updateObservations)
-        updater.$availableVersion.sink { [weak self] version in
-            guard let self else { return }
-            let title=version.map { "Update to \($0)…" } ?? "Check for Updates…"
-            for updateMenu in [appMenu,menu] { updateMenu.items.first { $0.action == #selector(self.checkForUpdates) } .map { L10n.menuTitle($0,source:title) } }
-            self.statusItem.button?.image=NashiArtwork.menuIcon(updateAvailable:version != nil)
-        }.store(in:&updateObservations)
+        NotificationCenter.default.publisher(for:.nashiLanguageChanged).sink { _ in L10n.localize(NSApp.mainMenu);L10n.localize(menu);L10n.updateWindowTitles() }.store(in:&observations)
         for name in [NSApplication.didResignActiveNotification,NSApplication.didBecomeActiveNotification,NSWindow.didMiniaturizeNotification,NSWindow.willCloseNotification] {
             NotificationCenter.default.publisher(for:name).sink { [weak self] _ in
                 DispatchQueue.main.async { self?.showProgress() }
-            }.store(in:&updateObservations)
+            }.store(in:&observations)
         }
-        updater.start()
-        NotificationCenter.default.publisher(for:.showUpdateConnection).sink { [weak self] _ in self?.showUpdateConnection() }.store(in:&updateObservations)
-        NotificationCenter.default.publisher(for:.showToolSetup).sink { [weak self] _ in self?.showToolSetup() }.store(in:&updateObservations)
+        NotificationCenter.default.publisher(for:.showToolSetup).sink { [weak self] _ in self?.showToolSetup() }.store(in:&observations)
         wheel=WheelController(state:state)
         monitor=DragMonitor(onEnd:{ [weak self] in self?.wheel.endDrag() }) { [weak self] urls,mode,point in self?.wheel.show(inputs:urls,mode:mode,at:point) }
         windowManagement=WindowManagementController(fileWheelIsVisible:{ [weak self] in self?.wheel.panel?.isVisible == true })
@@ -209,7 +192,7 @@ enum NashiApplication {
     @objc func showHome() {
         state.libraryVisible=false
         progressToast.dismiss()
-        if home == nil { home=makeWindow(title:"Nashi",size:NSSize(width:820,height:780),view:HomeView(state:state,updater:updater)) }
+        if home == nil { home=makeWindow(title:"Nashi",size:NSSize(width:820,height:780),view:HomeView(state:state)) }
         home?.contentMinSize=NSSize(width:700,height:580)
         home?.makeKeyAndOrderFront(nil);NSApp.activate(ignoringOtherApps:true)
         if !toolSetupOffered, Bundle.main.object(forInfoDictionaryKey:"NashiExternalTools") as? Bool == true, !ExternalToolSetup.status.ready {
@@ -220,7 +203,7 @@ enum NashiApplication {
         toolSetupOffered=true
         if toolSetupWindow == nil {
             let model=ToolSetupModel()
-            model.onWorkingChange={ [weak self] working in guard let self else{return};self.toolSetupWorking=working;self.toolSetupWindow?.standardWindowButton(.closeButton)?.isEnabled = !working;self.updater.setBusy(working || self.state.working) }
+            model.onWorkingChange={ [weak self] working in guard let self else{return};self.toolSetupWorking=working;self.toolSetupWindow?.standardWindowButton(.closeButton)?.isEnabled = !working }
             toolSetupWindow=makeWindow(title:"Set up Nashi tools",size:NSSize(width:646,height:690),view:ToolSetupView(model:model,onDone:{ [weak self] in
                 guard ExternalToolSetup.status.ready else{return}
                 UserDefaults.standard.set(true,forKey:"hasCompletedWelcome");self?.toolSetupWindow?.close();self?.showHome()
@@ -265,13 +248,9 @@ enum NashiApplication {
         if panel.runModal() == .OK { state.inputs=panel.urls;showHome() }
     }
     @objc func showSettings() {
-        presentSettings(updates:false)
-    }
-    private func presentSettings(updates:Bool) {
-        if settings == nil { settings=makeWindow(title:"Nashi Settings",size:NSSize(width:860,height:700),view:SettingsView(updater:updater,showingUpdates:updates)) }
+        if settings == nil { settings=makeWindow(title:"Nashi Settings",size:NSSize(width:860,height:700),view:SettingsView()) }
         settings?.contentMinSize=NSSize(width:790,height:590)
         settings?.makeKeyAndOrderFront(nil);NSApp.activate(ignoringOtherApps:true)
-        if updates { NotificationCenter.default.post(name:.showUpdateSettings,object:nil) }
     }
     @objc func showWelcome() {
         if welcome == nil {
@@ -289,15 +268,6 @@ enum NashiApplication {
         if !ExternalToolSetup.status.ready { showToolSetup() }
     }
     @objc func toggleEnabled(_ sender:NSMenuItem) { let value = !UserDefaults.standard.bool(forKey:"enabled");UserDefaults.standard.set(value,forKey:"enabled");sender.state=value ? .on : .off }
-    @objc func checkForUpdates() {
-        if updater.isConfigured { updater.checkForUpdates() }
-        else { showUpdateConnection() }
-    }
-    @objc func showUpdateConnection() {
-        if updateConnection == nil { updateConnection=makeWindow(title:"Nashi Update Connection",size:NSSize(width:620,height:720),view:UpdateConnectionView(updater:updater)) }
-        updateConnection?.contentMinSize=NSSize(width:560,height:570)
-        updateConnection?.makeKeyAndOrderFront(nil);NSApp.activate(ignoringOtherApps:true)
-    }
     func menuNeedsUpdate(_ menu:NSMenu) { menu.items.first(where:{$0.action == #selector(toggleEnabled)})?.state=UserDefaults.standard.bool(forKey:"enabled") ? .on:.off }
     @objc func quit() { NSApp.terminate(nil) }
     func showProgress() {
@@ -321,8 +291,7 @@ enum NashiApplication {
         else { state.inputs=urls;showHome();state.onOpenWheel?() }
     }
     func applicationShouldTerminate(_ sender:NSApplication)->NSApplication.TerminateReply {
-        // Sparkle can resume an earlier install without the postponement callback.
-        // Never terminate a conversion before it has committed its results.
+        // Never terminate a conversion or tool setup before it has finished.
         (state.working || toolSetupWorking) ? .terminateCancel:.terminateNow
     }
     func applicationShouldHandleReopen(_ sender:NSApplication,hasVisibleWindows flag:Bool)->Bool { showHome();return true }
@@ -343,7 +312,6 @@ enum NashiApplication {
 }
 extension AppDelegate:NSMenuItemValidation {
     func validateMenuItem(_ menuItem:NSMenuItem)->Bool {
-        if menuItem.action == #selector(checkForUpdates) { return !updater.isConfigured || (updater.canCheckForUpdates && !updater.isBusy) }
         if menuItem.action == #selector(quit) { return !state.working }
         return true
     }

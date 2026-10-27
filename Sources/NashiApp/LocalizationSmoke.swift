@@ -2,7 +2,6 @@ import AppKit
 import SwiftUI
 import ApplicationServices
 import NashiCore
-import NashiUpdates
 
 /// Opt-in QA uses an isolated preference suite and only its own Nashi window.
 @MainActor final class LocalizationSmoke:NSObject,NSApplicationDelegate {
@@ -39,7 +38,7 @@ import NashiUpdates
         let suite="Nashi.LanguageQA."+UUID().uuidString,defaults=UserDefaults(suiteName:suite)!
         defer { defaults.removePersistentDomain(forName:suite) }
         defaults.set("en",forKey:"appLanguage")
-        let view=LanguageFixture(updater:AppUpdater()).nashiLanguage().defaultAppStorage(defaults)
+        let view=LanguageFixture().nashiLanguage().defaultAppStorage(defaults)
         let w=NSWindow(contentRect:NSRect(x:100,y:80,width:860,height:750),styleMask:[.titled,.closable,.resizable],backing:.buffered,defer:false)
         w.title="Nashi Language QA";w.isReleasedWhenClosed=false;w.contentView=NSHostingView(rootView:view);window=w
         w.makeKeyAndOrderFront(nil);NSApp.activate(ignoringOtherApps:true);await pause()
@@ -74,7 +73,6 @@ import NashiUpdates
     }
 }
 private struct LanguageFixture:View {
-    let updater:AppUpdater
     @State private var draft="Original fixture text"
-    var body:some View { VStack(spacing:0) { SettingsView(updater:updater);TextField("Draft",text:$draft).accessibilityIdentifier("LanguageDraft").padding(12) } }
+    var body:some View { VStack(spacing:0) { SettingsView();TextField("Draft",text:$draft).accessibilityIdentifier("LanguageDraft").padding(12) } }
 }
