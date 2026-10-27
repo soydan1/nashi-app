@@ -39,12 +39,10 @@
 "A FEW TOOLS. MORE POSSIBILITIES." = "A FEW TOOLS. MORE POSSIBILITIES.";
 "A FRESH FILE IS ON ITS WAY." = "A FRESH FILE IS ON ITS WAY.";
 "A FRESH FILE IS ON ITS WAY…" = "A FRESH FILE IS ON ITS WAY…";
-"A FRESH NASHI IS READY." = "A FRESH NASHI IS READY.";
 "A FRESH START" = "A FRESH START";
 "A HAPPIER HOME FOR ALL THE LITTLE FILE JOBS. CONVERT, EDIT, AND SHARE — RIGHT ON YOUR MAC." = "A HAPPIER HOME FOR ALL THE LITTLE FILE JOBS. CONVERT, EDIT, AND SHARE — RIGHT ON YOUR MAC.";
 "A LINK. A FILE. YOURS TO WORK WITH." = "A LINK. A FILE. YOURS TO WORK WITH.";
 "A LITTLE CODE, DECODED." = "A LITTLE CODE, DECODED.";
-"A LITTLE FRESHER. READY WHEN YOU ARE." = "A LITTLE FRESHER. READY WHEN YOU ARE.";
 "A LITTLE LESS FILE FUSS. A LITTLE MORE FLOW." = "A LITTLE LESS FILE FUSS. A LITTLE MORE FLOW.";
 "A LITTLE LESS FILE FUSS. A LITTLE MORE FLOW.\nCONVERT, EDIT, AND ORGANIZE — RIGHT ON YOUR MAC." = "A LITTLE LESS FILE FUSS. A LITTLE MORE FLOW.\nCONVERT, EDIT, AND ORGANIZE — RIGHT ON YOUR MAC.";
 "A LITTLE PEAR. A LOT OF POSSIBILITY." = "A LITTLE PEAR. A LOT OF POSSIBILITY.";
@@ -52,13 +50,11 @@
 "A PLACE FOR FRESH FILES." = "A PLACE FOR FRESH FILES.";
 "A few small preferences. A smoother everyday." = "A few small preferences. A smoother everyday.";
 "A few tools. More possibilities." = "A few tools. More possibilities.";
-"A fresh Nashi is ready." = "A fresh Nashi is ready.";
 "A fresh file is on its way." = "A fresh file is on its way.";
 "A fresh file is on its way…" = "A fresh file is on its way…";
 "A happier home for all the little file jobs. Convert, edit, and share — right on your Mac." = "A happier home for all the little file jobs. Convert, edit, and share — right on your Mac.";
 "A link. A file. Yours to work with." = "A link. A file. Yours to work with.";
 "A little code, decoded." = "A little code, decoded.";
-"A little fresher. Ready when you are." = "A little fresher. Ready when you are.";
 "A little less file fuss. A little more flow." = "A little less file fuss. A little more flow.";
 "A little less file fuss. A little more flow.\nConvert, edit, and organize — right on your Mac." = "A little less file fuss. A little more flow.\nConvert, edit, and organize — right on your Mac.";
 "A little pear. A lot of possibility." = "A little pear. A lot of possibility.";
@@ -113,7 +109,6 @@
 "AUDIO TO VIDEO" = "AUDIO TO VIDEO";
 "AUDIO VISUALIZER" = "AUDIO VISUALIZER";
 "AUDIO · MP3" = "AUDIO · MP3";
-"AUTHORIZE SAVED TOKEN…" = "AUTHORIZE SAVED TOKEN…";
 "AVAILABLE FILES SELECTED. SOME FILES HAVE MOVED OR WERE DELETED." = "AVAILABLE FILES SELECTED. SOME FILES HAVE MOVED OR WERE DELETED.";
 "About" = "About";
 "Accessibility" = "Accessibility";
@@ -168,7 +163,6 @@
 "Audio sample depth" = "Audio sample depth";
 "Audio to Video" = "Audio to Video";
 "Audio · MP3" = "Audio · MP3";
-"Authorize Saved Token…" = "Authorize Saved Token…";
 "Available files selected. Some files have moved or were deleted." = "Available files selected. Some files have moved or were deleted.";
 "BACK" = "BACK";
 "BACKGROUND" = "BACKGROUND";
@@ -221,13 +215,7 @@
 "CHANGE VIDEO SPEED" = "CHANGE VIDEO SPEED";
 "CHANGE…" = "CHANGE…";
 "CHANNELS" = "CHANNELS";
-"CHECK AUTOMATICALLY WHILE NASHI IS RUNNING" = "CHECK AUTOMATICALLY WHILE NASHI IS RUNNING";
-"CHECK FOR UPDATES" = "CHECK FOR UPDATES";
-"CHECK FOR UPDATES AUTOMATICALLY" = "CHECK FOR UPDATES AUTOMATICALLY";
-"CHECK FOR UPDATES…" = "CHECK FOR UPDATES…";
 "CHECK LINK" = "CHECK LINK";
-"CHECKING FOR UPDATES…" = "CHECKING FOR UPDATES…";
-"CHECKING THE CONNECTION…" = "CHECKING THE CONNECTION…";
 "CHOOSE AN INPUT FORMAT TO SEE ITS AVAILABLE OUTPUTS." = "CHOOSE AN INPUT FORMAT TO SEE ITS AVAILABLE OUTPUTS.";
 "CHOOSE ANNOTATION IMAGE…" = "CHOOSE ANNOTATION IMAGE…";
 "CHOOSE BACKGROUND IMAGE…" = "CHOOSE BACKGROUND IMAGE…";
@@ -303,13 +291,7 @@
 "Change Video Speed" = "Change Video Speed";
 "Change…" = "Change…";
 "Channels" = "Channels";
-"Check automatically while Nashi is running" = "Check automatically while Nashi is running";
-"Check for Updates…" = "Check for Updates…";
-"Check for updates" = "Check for updates";
-"Check for updates automatically" = "Check for updates automatically";
 "Check link" = "Check link";
-"Checking for updates…" = "Checking for updates…";
-"Checking the connection…" = "Checking the connection…";
 "Choose Background Image…" = "Choose Background Image…";
 "Choose Files…" = "Choose Files…";
 "Choose Find media to inspect this link." = "Choose Find media to inspect this link.";
@@ -393,7 +375,6 @@
 "DETECT TEXT" = "DETECT TEXT";
 "DEVICE CONTROL AND DATA ACCESS" = "DEVICE CONTROL AND DATA ACCESS";
 "DEVICES" = "DEVICES";
-"DISCONNECT & FORGET TOKEN" = "DISCONNECT & FORGET TOKEN";
 "DISMISS" = "DISMISS";
 "DOCUMENTS" = "DOCUMENTS";
 "DONE" = "DONE";
@@ -443,7 +424,6 @@
 "Detect text" = "Detect text";
 "Device Control and Data Access" = "Device Control and Data Access";
 "Devices" = "Devices";
-"Disconnect & Forget Token" = "Disconnect & Forget Token";
 "Dismiss" = "Dismiss";
 "Documents" = "Documents";
 "Done" = "Done";
@@ -547,7 +527,6 @@
 "FIND IN LIBRARY…" = "FIND IN LIBRARY…";
 "FIND MEDIA" = "FIND MEDIA";
 "FINDING THE MEDIA…" = "FINDING THE MEDIA…";
-"FINE-GRAINED ACCESS TOKEN" = "FINE-GRAINED ACCESS TOKEN";
 "FINE-TUNE" = "FINE-TUNE";
 "FINE-TUNE IT. SAVE A FRESH COPY." = "FINE-TUNE IT. SAVE A FRESH COPY.";
 "FINISH OR CANCEL THE CURRENT OPERATION BEFORE QUITTING." = "FINISH OR CANCEL THE CURRENT OPERATION BEFORE QUITTING.";
@@ -607,7 +586,6 @@
 "Find in Library…" = "Find in Library…";
 "Find media" = "Find media";
 "Finding the media…" = "Finding the media…";
-"Fine-grained access token" = "Fine-grained access token";
 "Fine-tune" = "Fine-tune";
 "Fine-tune it. Save a fresh copy." = "Fine-tune it. Save a fresh copy.";
 "Finish or cancel the current operation before quitting." = "Finish or cancel the current operation before quitting.";
@@ -655,7 +633,6 @@
 "GIF frames per second" = "GIF frames per second";
 "GIF maximum width" = "GIF maximum width";
 "GIF width" = "GIF width";
-"GITHUB REPOSITORY" = "GITHUB REPOSITORY";
 "GIVE IT A LITTLE BREATHING ROOM." = "GIVE IT A LITTLE BREATHING ROOM.";
 "GLASS" = "GLASS";
 "GRADIENT" = "GRADIENT";
@@ -665,7 +642,6 @@
 "Gamma" = "Gamma";
 "General" = "General";
 "Get started" = "Get started";
-"GitHub repository" = "GitHub repository";
 "Give it a little breathing room." = "Give it a little breathing room.";
 "Glass" = "Glass";
 "Gradient" = "Gradient";
@@ -861,7 +837,6 @@
 "Mute" = "Mute";
 "Mute Video" = "Mute Video";
 "Mute Video · Nashi" = "Mute Video · Nashi";
-"NASHI CHECKS ONCE AN HOUR WHILE IT’S RUNNING. YOU CHOOSE WHEN TO DOWNLOAD AND INSTALL." = "NASHI CHECKS ONCE AN HOUR WHILE IT’S RUNNING. YOU CHOOSE WHEN TO DOWNLOAD AND INSTALL.";
 "NASHI SAVES RESULTS BESIDE THE ORIGINALS. ALLOW A FOLDER ONCE TO INCLUDE EVERY FOLDER INSIDE IT." = "NASHI SAVES RESULTS BESIDE THE ORIGINALS. ALLOW A FOLDER ONCE TO INCLUDE EVERY FOLDER INSIDE IT.";
 "NASHI SETTINGS" = "NASHI SETTINGS";
 "NEXT" = "NEXT";
@@ -874,7 +849,6 @@
 "NO FOLDERS ALLOWED YET." = "NO FOLDERS ALLOWED YET.";
 "NO MATCHES. TRY A FILE NAME OR TOOL." = "NO MATCHES. TRY A FILE NAME OR TOOL.";
 "NO QR CODES THIS TIME." = "NO QR CODES THIS TIME.";
-"NO UPDATE CHECKS YET" = "NO UPDATE CHECKS YET";
 "NOISE REDUCTION" = "NOISE REDUCTION";
 "NOISEREDUCTION" = "NOISEREDUCTION";
 "NONE" = "NONE";
@@ -884,7 +858,6 @@
 "NUMBER" = "NUMBER";
 "NUMBER OF CLIPS" = "NUMBER OF CLIPS";
 "Nashi Settings" = "Nashi Settings";
-"Nashi checks once an hour while it’s running. You choose when to download and install." = "Nashi checks once an hour while it’s running. You choose when to download and install.";
 "Nashi saves results beside the originals. Allow a folder once to include every folder inside it." = "Nashi saves results beside the originals. Allow a folder once to include every folder inside it.";
 "Next" = "Next";
 "Next frame" = "Next frame";
@@ -898,7 +871,6 @@
 "No QR codes this time." = "No QR codes this time.";
 "No folders allowed yet." = "No folders allowed yet.";
 "No matches. Try a file name or tool." = "No matches. Try a file name or tool.";
-"No update checks yet" = "No update checks yet";
 "Noise reduction" = "Noise reduction";
 "NoiseReduction" = "NoiseReduction";
 "None" = "None";
@@ -930,7 +902,6 @@
 "OUTPUT" = "OUTPUT";
 "OUTPUT FORMAT" = "OUTPUT FORMAT";
 "OUTPUT-ONLY FORMAT." = "OUTPUT-ONLY FORMAT.";
-"OWNER/REPOSITORY OR GITHUB URL" = "OWNER/REPOSITORY OR GITHUB URL";
 "Office tools" = "Office tools";
 "On your Mac" = "On your Mac";
 "On your PC" = "On your PC";
@@ -1007,7 +978,6 @@
 "PROCESSED PREVIEW · EXPORT USES THE ORIGINAL FILE." = "PROCESSED PREVIEW · EXPORT USES THE ORIGINAL FILE.";
 "PROCESSED PREVIEW. CHOOSE ORIGINAL TO EDIT AREAS." = "PROCESSED PREVIEW. CHOOSE ORIGINAL TO EDIT AREAS.";
 "PROCESSING…" = "PROCESSING…";
-"PUBLIC UPDATES WORK WITHOUT A TOKEN." = "PUBLIC UPDATES WORK WITHOUT A TOKEN.";
 "Padding" = "Padding";
 "Page %@" = "Page %@";
 "Page %lld" = "Page %lld";
@@ -1056,7 +1026,6 @@
 "Processed preview · export uses the original file." = "Processed preview · export uses the original file.";
 "Processed preview. Choose Original to edit areas." = "Processed preview. Choose Original to edit areas.";
 "Processing…" = "Processing…";
-"Public updates work without a token." = "Public updates work without a token.";
 "QUALITY" = "QUALITY";
 "QUALITY (%)" = "QUALITY (%)";
 "QUICK LOOK" = "QUICK LOOK";
@@ -1187,7 +1156,6 @@
 "SAVE AS" = "SAVE AS";
 "SAVE AUDIO COPY" = "SAVE AUDIO COPY";
 "SAVE BLEEPED COPY" = "SAVE BLEEPED COPY";
-"SAVE CONNECTION" = "SAVE CONNECTION";
 "SAVE COPY" = "SAVE COPY";
 "SAVE CROPPED COPY" = "SAVE CROPPED COPY";
 "SAVE DEFAULTS" = "SAVE DEFAULTS";
@@ -1218,7 +1186,6 @@
 "SELECT / MOVE" = "SELECT / MOVE";
 "SELECT A CLIP AND PRESS DELETE TO REMOVE IT FROM THE RESULT." = "SELECT A CLIP AND PRESS DELETE TO REMOVE IT FROM THE RESULT.";
 "SELECT ALL" = "SELECT ALL";
-"SELECT ONLY THIS REPOSITORY AND GIVE CONTENTS READ ACCESS. THE TOKEN STAYS IN THIS MAC’S KEYCHAIN." = "SELECT ONLY THIS REPOSITORY AND GIVE CONTENTS READ ACCESS. THE TOKEN STAYS IN THIS MAC’S KEYCHAIN.";
 "SELECT PHOTOS" = "SELECT PHOTOS";
 "SELECTED FOLDER" = "SELECTED FOLDER";
 "SERIF" = "SERIF";
@@ -1289,7 +1256,6 @@
 "Save %@ frames" = "Save %@ frames";
 "Save %lld frames" = "Save %lld frames";
 "Save 1 frame" = "Save 1 frame";
-"Save Connection" = "Save Connection";
 "Save a copy" = "Save a copy";
 "Save annotated copy" = "Save annotated copy";
 "Save as" = "Save as";
@@ -1327,7 +1293,6 @@
 "Select / Move" = "Select / Move";
 "Select All" = "Select All";
 "Select a clip and press Delete to remove it from the result." = "Select a clip and press Delete to remove it from the result.";
-"Select only this repository and give Contents read access. The token stays in this Mac’s Keychain." = "Select only this repository and give Contents read access. The token stays in this Mac’s Keychain.";
 "Select photos" = "Select photos";
 "Selected duration: %@" = "Selected duration: %@";
 "Selected duration: %lld" = "Selected duration: %lld";
@@ -1414,8 +1379,6 @@
 "THIS FORMAT CAN BE IMPORTED. CHOOSE AN OUTPUT FORMAT IN THE SIDEBAR TO CONFIGURE ITS DEFAULTS." = "THIS FORMAT CAN BE IMPORTED. CHOOSE AN OUTPUT FORMAT IN THE SIDEBAR TO CONFIGURE ITS DEFAULTS.";
 "THIS FORMAT USES ITS ORIGINAL DOCUMENT STRUCTURE. NO EXPORT DEFAULTS ARE NEEDED." = "THIS FORMAT USES ITS ORIGINAL DOCUMENT STRUCTURE. NO EXPORT DEFAULTS ARE NEEDED.";
 "THIS OUTPUT FORMAT HAS NO ADJUSTABLE CONVERSION DEFAULTS." = "THIS OUTPUT FORMAT HAS NO ADJUSTABLE CONVERSION DEFAULTS.";
-"THIS REPOSITORY IS PRIVATE" = "THIS REPOSITORY IS PRIVATE";
-"THIS WINDOWS CODEC CANNOT PLAY DIRECTLY. SET UP MEDIA TOOLS TO CREATE A LOCAL PREVIEW." = "THIS WINDOWS CODEC CANNOT PLAY DIRECTLY. SET UP MEDIA TOOLS TO CREATE A LOCAL PREVIEW.";
 "THUMBNAIL" = "THUMBNAIL";
 "TIMES (SECONDS)" = "TIMES (SECONDS)";
 "TINT" = "TINT";
@@ -1451,13 +1414,11 @@
 "The downloaded tools are incomplete. Please try setup again." = "The downloaded tools are incomplete. Please try setup again.";
 "The same conversion and tool catalog as macOS." = "The same conversion and tool catalog as macOS.";
 "These files have moved or were deleted." = "These files have moved or were deleted.";
-"This Windows codec cannot play directly. Set up media tools to create a local preview." = "This Windows codec cannot play directly. Set up media tools to create a local preview.";
 "This crop applies to every selected image and must fit inside each one." = "This crop applies to every selected image and must fit inside each one.";
 "This file has moved or was deleted." = "This file has moved or was deleted.";
 "This format can be imported. Choose an output format in the sidebar to configure its defaults." = "This format can be imported. Choose an output format in the sidebar to configure its defaults.";
 "This format uses its original document structure. No export defaults are needed." = "This format uses its original document structure. No export defaults are needed.";
 "This output format has no adjustable conversion defaults." = "This output format has no adjustable conversion defaults.";
-"This repository is private" = "This repository is private";
 "Thumbnail" = "Thumbnail";
 "Times (seconds)" = "Times (seconds)";
 "Tint" = "Tint";
@@ -1484,17 +1445,8 @@
 "UNIT" = "UNIT";
 "UP TO 1080P" = "UP TO 1080P";
 "UP TO 720P" = "UP TO 720P";
-"UPDATE CANCELLED." = "UPDATE CANCELLED.";
-"UPDATE CONNECTION…" = "UPDATE CONNECTION…";
-"UPDATES" = "UPDATES";
-"UPDATES ARE BEING SET UP" = "UPDATES ARE BEING SET UP";
-"UPDATES ARE DOWNLOADED FROM THE PUBLIC NASHI REPOSITORY AND VERIFIED BEFORE INSTALLATION. NO GITHUB ACCOUNT OR TOKEN IS REQUIRED." = "UPDATES ARE DOWNLOADED FROM THE PUBLIC NASHI REPOSITORY AND VERIFIED BEFORE INSTALLATION. NO GITHUB ACCOUNT OR TOKEN IS REQUIRED.";
-"UPDATES ARE SIGNED AND VERIFIED BEFORE INSTALLATION. CHANGING REPOSITORIES KEEPS THE SAME TRUSTED SIGNING KEY. YOUR SETTINGS AND FILES STAY WITH YOU." = "UPDATES ARE SIGNED AND VERIFIED BEFORE INSTALLATION. CHANGING REPOSITORIES KEEPS THE SAME TRUSTED SIGNING KEY. YOUR SETTINGS AND FILES STAY WITH YOU.";
-"UPDATES ARE VERIFIED BEFORE INSTALLATION. YOUR SETTINGS AND RECENT HISTORY STAY WITH YOU." = "UPDATES ARE VERIFIED BEFORE INSTALLATION. YOUR SETTINGS AND RECENT HISTORY STAY WITH YOU.";
-"UPDATE…" = "UPDATE…";
 "UPSTREAM VERSIONS, LICENSES AND SOURCE LINKS" = "UPSTREAM VERSIONS, LICENSES AND SOURCE LINKS";
 "USE IN NASHI" = "USE IN NASHI";
-"USE ONCE IF MACOS NEEDS PERMISSION FOR YOUR SAVED UPDATE CONNECTION." = "USE ONCE IF MACOS NEEDS PERMISSION FOR YOUR SAVED UPDATE CONNECTION.";
 "USE OPEN TO PREVIEW THIS DOCUMENT IN ITS DEFAULT APP." = "USE OPEN TO PREVIEW THIS DOCUMENT IN ITS DEFAULT APP.";
 "Undo" = "Undo";
 "Undo Area" = "Undo Area";
@@ -1503,24 +1455,11 @@
 "Unit" = "Unit";
 "Up to 1080p" = "Up to 1080p";
 "Up to 720p" = "Up to 720p";
-"Update Connection…" = "Update Connection…";
-"Update cancelled." = "Update cancelled.";
-"Update to %@" = "Update to %@";
-"Update to %@…" = "Update to %@…";
-"Update to %lld" = "Update to %lld";
-"Update to %lld…" = "Update to %lld…";
-"Updates" = "Updates";
-"Updates are being set up" = "Updates are being set up";
-"Updates are downloaded from the public Nashi repository and verified before installation. No GitHub account or token is required." = "Updates are downloaded from the public Nashi repository and verified before installation. No GitHub account or token is required.";
-"Updates are signed and verified before installation. Changing repositories keeps the same trusted signing key. Your settings and files stay with you." = "Updates are signed and verified before installation. Changing repositories keeps the same trusted signing key. Your settings and files stay with you.";
-"Updates are verified before installation. Your settings and recent history stay with you." = "Updates are verified before installation. Your settings and recent history stay with you.";
-"Update…" = "Update…";
 "Upgraded from Tangerine? macOS may still show the previous name. Choose this Nashi app when adding it to %@." = "Upgraded from Tangerine? macOS may still show the previous name. Choose this Nashi app when adding it to %@.";
 "Upgraded from Tangerine? macOS may still show the previous name. Choose this Nashi app when adding it to %lld." = "Upgraded from Tangerine? macOS may still show the previous name. Choose this Nashi app when adding it to %lld.";
 "Upstream versions, licenses and source links" = "Upstream versions, licenses and source links";
 "Use Open to preview this document in its default app." = "Use Open to preview this document in its default app.";
 "Use in Nashi" = "Use in Nashi";
-"Use once if macOS needs permission for your saved update connection." = "Use once if macOS needs permission for your saved update connection.";
 "VALUE" = "VALUE";
 "VIBRANCE" = "VIBRANCE";
 "VIDEO" = "VIDEO";
@@ -1567,9 +1506,6 @@
 "Window management · drag a title bar, then Shift or Alt" = "Window management · drag a title bar, then Shift or Alt";
 "Working…" = "Working…";
 "YOU CAN ALSO CHOOSE FILES FROM THE MAIN WINDOW." = "YOU CAN ALSO CHOOSE FILES FROM THE MAIN WINDOW.";
-"YOU CHOOSE WHEN TO DOWNLOAD AND INSTALL." = "YOU CHOOSE WHEN TO DOWNLOAD AND INSTALL.";
-"YOU HAVE THE LATEST PUBLISHED WINDOWS VERSION." = "YOU HAVE THE LATEST PUBLISHED WINDOWS VERSION.";
-"YOUR CURRENT TASK WILL FINISH BEFORE AN UPDATE RESTARTS THE APP." = "YOUR CURRENT TASK WILL FINISH BEFORE AN UPDATE RESTARTS THE APP.";
 "YOUR FILES STAY LOCAL" = "YOUR FILES STAY LOCAL";
 "YOUR FILES WILL BE SAVED AS NEW COPIES.\nCHOOSE OPTIONS, THEN SAVE." = "YOUR FILES WILL BE SAVED AS NEW COPIES.\nCHOOSE OPTIONS, THEN SAVE.";
 "YOUR FILES, A LITTLE SWEETER." = "YOUR FILES, A LITTLE SWEETER.";
@@ -1583,10 +1519,7 @@
 "YOUR TOOLS ARE READY. LET’S PUT THAT NEXT FILE TO GOOD USE." = "YOUR TOOLS ARE READY. LET’S PUT THAT NEXT FILE TO GOOD USE.";
 "YOU’RE ALL SET.\nMAKE SOMETHING GOOD." = "YOU’RE ALL SET.\nMAKE SOMETHING GOOD.";
 "You can also choose files from the main window." = "You can also choose files from the main window.";
-"You choose when to download and install." = "You choose when to download and install.";
-"You have the latest published Windows version." = "You have the latest published Windows version.";
 "Your Library" = "Your Library";
-"Your current task will finish before an update restarts the app." = "Your current task will finish before an update restarts the app.";
 "Your files stay local" = "Your files stay local";
 "Your files will be saved as new copies.\nChoose options, then save." = "Your files will be saved as new copies.\nChoose options, then save.";
 "Your files, a little sweeter." = "Your files, a little sweeter.";
@@ -1599,7 +1532,6 @@
 "Your tools are ready. Let’s put that next file to good use." = "Your tools are ready. Let’s put that next file to good use.";
 "You’re all set.\nMake something good." = "You’re all set.\nMake something good.";
 "macOS Reduce Motion is on. Nashi keeps motion off." = "macOS Reduce Motion is on. Nashi keeps motion off.";
-"owner/repository or GitHub URL" = "owner/repository or GitHub URL";
 "←/→ FILES · MEDIA: SPACE PLAY/PAUSE, ←/→ 1S, ALT+←/→ FILES · ESC CLOSES" = "←/→ FILES · MEDIA: SPACE PLAY/PAUSE, ←/→ 1S, ALT+←/→ FILES · ESC CLOSES";
 "←/→ FILES · MEDIA: SPACE PLAY/PAUSE, ←/→ 1S, ⌥←/→ FILES · ESC CLOSES" = "←/→ FILES · MEDIA: SPACE PLAY/PAUSE, ←/→ 1S, ⌥←/→ FILES · ESC CLOSES";
 "←/→ files · Media: Space play/pause, ←/→ 1s, Alt+←/→ files · Esc closes" = "←/→ files · Media: Space play/pause, ←/→ 1s, Alt+←/→ files · Esc closes";

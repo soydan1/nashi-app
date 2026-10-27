@@ -1,10 +1,11 @@
 # Security policy
 
 Nashi processes files locally. It does not run a cloud API, collect analytics,
-import browser cookies, or ask for an account for official public updates.
-Web downloads contact the URL/site you choose. Updates use HTTPS and a pinned
-Ed25519 public key; signing private keys and developer certificates are never
-part of the source repository or application resources.
+import browser cookies, or ask for a cloud account. This fork supports macOS
+only and contains no app updater; newer app builds must be installed manually.
+Web downloads contact the URL/site you choose. External-tool setup downloads
+from upstream over HTTPS and verifies pinned hashes. Signing private keys and
+developer certificates are never part of the source or application resources.
 
 Please report a suspected vulnerability using GitHub's private **Report a
 vulnerability** form in this repository's Security tab. Do not post credentials,
@@ -21,9 +22,9 @@ files from untrusted sources and keep the app and operating system current.
 Pull-request checks receive read-only repository permissions and no signing
 secrets. Do not add `pull_request_target` jobs that execute contributor code,
 self-hosted runners, plaintext credentials, or user-provided shell command text.
-Production updates must be signed by the maintainer's offline/local signing
-identity, then verified before publication. A successful build artifact alone
-is not an official signed release.
+Release packages should be signed by the maintainer's own signing identity
+and verified before publication. Source builds use ad-hoc signing by default;
+a successful build artifact alone does not imply Apple notarization.
 
 Private workspaces, historical analysis, credentials, certificates, browser
 profiles, local paths, and raw user files are excluded from this repository.

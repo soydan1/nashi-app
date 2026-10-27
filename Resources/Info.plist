@@ -48,30 +48,9 @@
 	<string>13.0</string>
 	<key>LSUIElement</key>
 	<true/>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsLocalNetworking</key>
-		<true/>
-	</dict>
+	<key>NashiExternalTools</key>
+	<true/>
 	<key>NSHighResolutionCapable</key>
-	<true/>
-	<key>SUAllowsAutomaticUpdates</key>
-	<false/>
-	<key>SUAutomaticallyUpdate</key>
-	<false/>
-	<key>SUEnableAutomaticChecks</key>
-	<true/>
-	<key>SUEnableSystemProfiling</key>
-	<false/>
-	<key>SUPublicEDKey</key>
-	<string>VPJpPpgXKda4c3ZOvP4zH8koa3ht1jm6lJWNBr+2saU=</string>
-	<key>SURequireSignedFeed</key>
-	<true/>
-	<key>SUScheduledCheckInterval</key>
-	<real>3600.0</real>
-	<key>SUSignedFeedFailureExpirationInterval</key>
-	<integer>0</integer>
-	<key>SUVerifyUpdateBeforeExtraction</key>
 	<true/>
 </dict>
 </plist>

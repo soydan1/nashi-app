@@ -2,11 +2,9 @@ import AppKit
 import SwiftUI
 import NashiCore
 import UniformTypeIdentifiers
-import NashiUpdates
 
 struct HomeView:View {
     @ObservedObject var state:AppState
-    @ObservedObject var updater:AppUpdater
     @AppStorage("convertKey") private var convertKey="shift"
     @AppStorage("toolsKey") private var toolsKey="command"
     @AppStorage("actionsKey") private var actionsKey="control"
@@ -41,17 +39,6 @@ struct HomeView:View {
                 .onReceive(NotificationCenter.default.publisher(for:NSApplication.didBecomeActiveNotification)) { _ in toolsReady=ExternalToolSetup.status.ready }
             if state.libraryVisible { libraryPage } else { ScrollView {
                 VStack(alignment:.leading,spacing:22) {
-                    if let version=updater.availableVersion {
-                        UpdateBanner(updater:updater,version:version).transition(.opacity.combined(with:.move(edge:.top)))
-                    }
-                    if updater.repository != nil, let updateError=updater.lastError {
-                        HStack(spacing:12) {
-                            Label(updateError,systemImage:"exclamationmark.circle").font(.caption).foregroundStyle(.secondary).fixedSize(horizontal:false,vertical:true)
-                            Spacer(minLength:8)
-                            Button("Update Connection…") { NotificationCenter.default.post(name:.showUpdateConnection,object:nil) }
-                                .buttonStyle(NashiButtonStyle(.secondary,compact:true))
-                        }.padding(16).nashiCard()
-                    }
                     HStack(alignment:.bottom) {
                         VStack(alignment:.leading,spacing:6) {
                             LText(state.inputs.isEmpty ? "Your files. Their next form.":"Let’s make something of it.")
@@ -84,7 +71,6 @@ struct HomeView:View {
         }
         }.frame(minWidth:700,minHeight:580).background(NashiPalette.canvas).tint(.nashi)
             .nashiAnimation(value:state.inputs.isEmpty).nashiAnimation(value:state.working)
-            .nashiAnimation(value:updater.availableVersion)
             .onChange(of:state.libraryFocusRequest) { _ in librarySearchFocused=true }
             .onChange(of:state.inputs) { _ in if !state.working { state.outputs=[];state.error=nil } }
     }

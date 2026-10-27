@@ -4,7 +4,7 @@ The English and Turkish landing pages use an independent implementation of Nashi
 
 ## Interaction
 
-- Drag a sample file, tap Shift (Convert), Command (Tools) or Control (Actions) on Mac; Ctrl opens Tools and Alt opens Actions on Windows, then drop on a wheel slice.
+- Drag a sample file, tap Shift (Convert), Command (Tools) or Control (Actions) with the macOS shortcuts, then drop on a wheel slice.
 - Click a mode button, or focus a file and press Enter. Arrow keys, Home/End, Enter and Escape work in the wheel.
 - Shift-click selects multiple files. Batch wheels use the intersection of the app catalog's formats and tools.
 - Touch users tap a file, then a mode and a wheel option.

@@ -1,8 +1,10 @@
 # Nashi
 
-[English](README.md) · [Türkçe özellikler ve kısayollar](https://orkunisitmak.github.io/nashi-app/tr/) · [Son sürüm](https://github.com/orkunisitmak/nashi-app/releases/latest)
+[English](README.md) · [Türkçe özellikler ve kısayollar](https://orkunisitmak.github.io/nashi-app/tr/) · [Upstream sürümler](https://github.com/orkunisitmak/nashi-app/releases/latest)
 
-Nashi, [Tangerine](https://tangerineformac.com/) uygulamasının sürükle ve çark etkileşiminden ilham alan bağımsız, açık kaynaklı bir dosya dönüştürme/düzenleme uygulamasıdır. Web’den medya indirme, QR okuma, geliştirilmiş crop/annotate araçları, klavyeyle medya düzenleme, canlı ilerleme ve imzalı otomatik güncelleme ekler. Tangerine veya LEAP STUDIO ile bağlantılı değildir; referans uygulamanın binary dosyaları veya görselleri dağıtılmaz.
+Nashi, [Tangerine](https://tangerineformac.com/) uygulamasının sürükle ve çark etkileşiminden ilham alan bağımsız, açık kaynaklı bir dosya dönüştürme/düzenleme uygulamasıdır. Web’den medya indirme, QR okuma, geliştirilmiş crop/annotate araçları, klavyeyle medya düzenleme ve canlı ilerleme ekler. Tangerine veya LEAP STUDIO ile bağlantılı değildir; referans uygulamanın binary dosyaları veya görselleri dağıtılmaz.
+
+**Bu fork yalnızca macOS’u destekler ve uygulama güncelleyicisi içermez.** Yeni sürümler elle kurulur. Harici araç indirme/kurulumu korunur. Aşağıdaki upstream site ve sürüm linkleri bu fork’un değil, orijinal projenin çıktılarıdır.
 
 [Etkileşimli web demosunu dene](https://orkunisitmak.github.io/nashi-app/tr/#playground): örnek dosyaları sürükle, wheel ve kısayolları kullan, 27 aracı keşfet. Desteklenen görsel/PDF/ses çıktıları gerçektir; masaüstüne özel işlemler önizleme olarak işaretlenir.
 
@@ -17,26 +19,27 @@ macOS 0.7.3 ile çekilmiş gerçek kullanım ekran kaydı: Finder’dan sürükl
 | macOS · Ana ekran | macOS · Görsel kırp |
 | :---: | :---: |
 | [![Nashi Mac ana ekranı](docs/assets/showcase/mac-home.png)](docs/assets/showcase/mac-home.png) | [![Kare seçim ve oran kontrolleriyle Nashi kırpma editörü](docs/assets/showcase/mac-crop.png)](docs/assets/showcase/mac-crop.png) |
-| **macOS · Video kırp** | **Windows · 0.7.5** |
-| [![In/Out tutamaçları ve seçilen aralıkla Nashi video trim editörü](docs/assets/showcase/mac-trim.png)](docs/assets/showcase/mac-trim.png) | [![Koyu temada yerel Windows 0.7.5 ana ekranı](docs/assets/showcase/windows-home-preview.png)](docs/assets/showcase/windows-home-preview.png) |
+| **macOS · Video kırp** | **macOS · Çark** |
+| [![In/Out tutamaçları ve seçilen aralıkla Nashi video trim editörü](docs/assets/showcase/mac-trim.png)](docs/assets/showcase/mac-trim.png) | [![Nashi dönüştürme çarkı](docs/assets/showcase/mac-wheel.png)](docs/assets/showcase/mac-wheel.png) |
 
-Windows görüntüsü, [PR #1](https://github.com/orkunisitmak/nashi-app/pull/1) ile doğrulanan ve yayınlanan 0.7.5 kodunun yerel UI testinden alınmıştır. Demo dosyaları yalnızca Nashi görsellerini içerir; kişisel dosya veya hesap bilgisi gösterilmez.
+Demo dosyaları yalnızca Nashi görsellerini içerir; kişisel dosya veya hesap bilgisi gösterilmez.
 
 ## İndir ve kullan
 
-- **[macOS ZIP · Apple Silicon, macOS 13+](https://github.com/orkunisitmak/nashi-app/releases/latest/download/Nashi-macOS-arm64.zip):** ZIP’i aç, Nashi.app’i Uygulamalar klasörüne taşı ve aç. macOS kataloğu 27 araç, 45 girdi formatı ve 275 dönüşüm yolu içerir.
-- **[Windows x64 ZIP · yerel önizleme](https://github.com/orkunisitmak/nashi-app/releases/latest/download/Nashi-Windows-x64.zip):** ZIP’in tamamını kendine ait, yazılabilir bir klasöre çıkar ve Nashi.exe’yi aç. Ayrıca .NET kurmak gerekmez. Güncelleme için klasörün bütünlüğünü koru. [Windows özellikleri ve farkları](windows/README.md).
+Bu fork’u [macOS build adımlarıyla](README.md#build) derle, ardından `build/Nashi.app` dosyasını Uygulamalar klasörüne taşı. Apple Silicon ve macOS 13+ gerekir. Katalog 27 araç, 45 girdi formatı ve 275 dönüşüm yolu içerir.
+
+[Upstream macOS sürümleri](https://github.com/orkunisitmak/nashi-app/releases/latest) bu fork’un değişikliklerini içermez.
 
 İlk açılışta **Kurulumu tamamla → Eksik araçları indir** akışı Medya ve Office araçlarını sırayla kurar. Bilgisayarında bulunan araçlar yeniden indirilmez; iptal veya hata sonrasında yalnızca eksik gruplarla devam edilir. **Araçlar hazır** durumu iki grup da kullanılabilir olduğunda gösterilir. İndirmeler doğrudan upstream’den gelir; hash’leri kurulumdan önce doğrulanır. Temel yerel görsel/PDF işlemleri hemen çalışır. [Sürümler, hash’ler ve lisanslar](docs/dependencies.md).
 
-İlk public build’lerde Apple notarization / Windows Authenticode yayıncı imzası bulunmuyor. İşletim sistemi ilk açılışta onay isteyebilir. Nashi sistem güvenlik ayarlarını kapatmaz. Resmi yayınlarda SHA-256 dosyası vardır; her CI çıktısı resmi imzalı güncelleme sayılmaz.
+Kaynak derlemeleri varsayılan olarak ad-hoc imzalıdır ve Apple notarization içermez. macOS ilk açılışta onay isteyebilir. Nashi sistem güvenlik ayarlarını kapatmaz.
 
 ## Kısayollar
 
-macOS’ta Finder’da sürüklerken **Shift** dönüşüm, **Command** araçlar, **Control** dosya işlemleri çarkını açar. **Control–Shift–D** kopyalanmış public linki indirir. Sürükleme tuşları özelleştirilebilir. Windows’ta **Ctrl+O** dosya seçer; **Ctrl+Space** seçili dosyaların araç çarkını açar.
+macOS’ta Finder’da sürüklerken **Shift** dönüşüm, **Command** araçlar, **Control** dosya işlemleri çarkını açar. **Control–Shift–D** kopyalanmış public linki indirir. Sürükleme tuşları özelleştirilebilir.
 
 Desteklenen medya editörlerinde **Space** oynat/duraklat, **sağ/sol ok** bir saniye ilerle/geri git, **I/O** aralık başlangıcı/sonu. Crop’ta sürükleyerek seç, **Shift** ile oranı kilitle, **Enter** ile kaydet. [Tam kısayol rehberi](https://orkunisitmak.github.io/nashi-app/tr/#shortcuts).
 
-Dönüştürme ve düzenleme yerelde çalışır. Web indirmeleri seçtiğin siteye bağlanır. Analytics, bulut hesabı veya tarayıcı çerezi aktarma yok. Public güncellemeler GitHub hesabı/token istemez. macOS feed ve arşiv imzasını, Windows arşiv imzasını ve sürümünü doğrular. İşler tamamlanmadan veya iptal edilmeden güncelleme için uygulama kapanmaz. Windows eski uygulama klasörünü geri alınabilir yedek olarak tutar.
+Dönüştürme ve düzenleme yerelde çalışır. Web indirmeleri seçtiğin siteye bağlanır. Analytics, bulut hesabı veya tarayıcı çerezi aktarma yok. Bu fork uygulama güncellemesi aramaz, indirmez veya kurmaz. İşler tamamlandıktan sonra yeni sürümü elle kur. Harici araç kurulumu hash’i doğrulanmış araçları doğrudan upstream’den indirmeye devam eder.
 
-Kaynak kod [MIT](LICENSE) lisanslıdır; üçüncü taraf bileşenlerin kendi lisansları geçerlidir. [macOS build adımları](README.md#build) · [Windows build adımları](windows/README.md).
+Kaynak kod [MIT](LICENSE) lisanslıdır; üçüncü taraf bileşenlerin kendi lisansları geçerlidir. [macOS build adımları](README.md#build).

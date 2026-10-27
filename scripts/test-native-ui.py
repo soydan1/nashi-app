@@ -37,11 +37,6 @@ def bundle_for_audit(binary, output):
     core_resources = binary.parent / "Nashi_NashiCore.bundle"
     if core_resources.is_dir():
         shutil.copytree(core_resources, resources / core_resources.name)
-    framework = repository / ".build/artifacts/sparkle/Sparkle/Sparkle.xcframework/macos-arm64_x86_64/Sparkle.framework"
-    shutil.copytree(framework, contents / "Frameworks/Sparkle.framework", symlinks=True)
-    subprocess.run(["python3", str(repository / "scripts/configure-updates.py"),
-                    str(contents / "Info.plist"), str(repository / "Configuration/Updates.public.plist")],
-                   check=True, capture_output=True)
     subprocess.run(["codesign", "--force", "--sign", "-", "--options", "0", "--timestamp=none", str(candidate)],
                    check=True, capture_output=True)
     marker.write_text("Generated Nashi own-window QA bundle; no optional tool installers.\n")
@@ -84,7 +79,7 @@ def main():
     assert gallery["passed"] and len(gallery["captures"]) == 40
     assert len(gallery["validatorChecks"]) >= 18
     expected = {(s, a, l) for s in ["home.empty", "home.selected", "library",
-        "settings.general", "settings.formats", "settings.updates", "wheel.pdf-multiple",
+        "settings.general", "settings.formats", "settings.about", "wheel.pdf-multiple",
         "editor.crop-image", "editor.annotate-image", "editor.frame-image"]
         for a in ["light", "dark"] for l in ["en", "tr"]}
     assert {(c["scene"], c["appearance"], c["language"]) for c in gallery["captures"]} == expected

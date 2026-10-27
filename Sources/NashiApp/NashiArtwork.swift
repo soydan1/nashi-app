@@ -43,12 +43,11 @@ enum NashiArtwork {
     static func mark(size:CGFloat,happy:Bool=false)->NSImage {
         NSImage(size:NSSize(width:size,height:size),flipped:false) { rect in draw(in:rect,happy:happy);return true }
     }
-    static func menuIcon(updateAvailable:Bool=false)->NSImage {
+    static func menuIcon()->NSImage {
         let image=NSImage(size:NSSize(width:20,height:20),flipped:false) { rect in
             draw(in:rect.insetBy(dx:0.5,dy:0.5),monochrome:true)
-            if updateAvailable { NSColor.black.setFill();NSBezierPath(ovalIn:NSRect(x:15,y:15,width:4,height:4)).fill() }
             return true
         }
-        image.isTemplate=true;image.accessibilityDescription=updateAvailable ? "Nashi update available":"Nashi";return image
+        image.isTemplate=true;image.accessibilityDescription="Nashi";return image
     }
 }
