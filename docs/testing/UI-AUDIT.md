@@ -17,7 +17,7 @@ swift build --product Nashi
 
 An installed candidate app's `Contents/MacOS/Nashi` accepts the same flags. Prefer a packaged candidate for review of bundled resources. Use `--hold` on the Mac audit to inspect its final scene with Computer Use; `--keep-range-open` keeps the range fixture open after its checks.
 
-On Mac, `python3 scripts/test-native-ui.py` runs the matrix, 18 adversarial audit-validator cases, range/artwork checks, invalid-argument checks and the output overwrite guard. It wraps a bare SwiftPM executable in a disposable QA bundle with the actual localization resources; otherwise older macOS versions can silently fall back to English for native controls. This minimal QA bundle does not package or install optional tools. The source workflow publishes its `mac-native-ui` artifact. Pass `--app /absolute/path/to/Nashi.app/Contents/MacOS/Nashi` to review a full packaged candidate with the same script.
+On Mac, `python3 scripts/test-native-ui.py` runs the matrix, 18 adversarial audit-validator cases, range/artwork checks, invalid-argument checks and the output overwrite guard. It wraps a bare SwiftPM executable in a disposable QA bundle with the actual localization resources; otherwise older macOS versions can silently fall back to English for native controls. This minimal QA bundle does not package or install optional tools. Run this script locally when needed; its default output directory is `build/native-ui`. This fork does not run macOS UI checks in GitHub Actions. Pass `--app /absolute/path/to/Nashi.app/Contents/MacOS/Nashi` to review a full packaged candidate with the same script.
 
 The audit command accepts these optional filters:
 
